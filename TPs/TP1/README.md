@@ -72,8 +72,43 @@ Les régions sont empilées, par défault, par ordre alphabétique.
 
 ## Sauvegarder et partager
 
-La visualision précendente est disponible sur [Tableau Public - Adrien Kaczmarek - TP1](https://public.tableau.com/app/profile/adrien.kaczmarek/viz/TP1_16417315266490/TP1?publish=yes)
+La visualision précendente est disponible sur [Tableau Public - Adrien Kaczmarek - TP1](https://public.tableau.com/app/profile/adrien.kaczmarek/viz/TP1-ALL/TP1-ALL)
 
 ## Filtrer de manière basique
 
 ### Quelles régions/départements avez-vous filtré?
+
+Nous ne gardons que les *5 DOMs* :
+- Mayotte
+- Martinique
+- La Réunion
+- Guadeloupe
+- Guyane
+
+![Hospitalisation DOM](./assets/1.3.a.1.png)
+
+## Identifier les tendances
+
+> Dans les graphiques suivants, les courbes **bleues** sont relatives aux hospitalisations, et le courbes **rouges** aux cas positifs.
+
+Nous réalisons une moyenne lissée sur les **7** derniers jours du nombre d'hospitalisations en France (*tout territoires confondus*), et du nombre de cas positif.
+
+![Hospitalisation et Cas positif](./assets/1.4.a.1.png)
+
+### Listez les périodes de croissances et de décroissances du virus.
+
+Pour identifier rapidement les périodes de croissance et de décroissance, nous affichons les variations lissées du nombre d'hospitalisations en France (*tout territoires confondus*), et du nombre de cas positif.
+
+![Variation Hospitalisation et Cas positif](./assets/1.4.a.2.png)
+
+Nous remarquons une première période de forte croissance **début Avril**, suivi d'une forte décroissance **début Mai**, puis une croissance lente et une seconde croissance forte **mi-Octobre**.
+
+### Quels décalage temporel pouvez vous identifier visuellement entre les différents indicateurs ?
+
+Nous notons le second maximum de variation (*pire jour de l'épidémie*) pour le nombre de cas positif et le nombre d'hospitalisation.
+
+Le nombre d'hospitalisation grandit au plus, lors de la seconde vague, le **3 Novembre 2022**, alors que le nombre de cas positif varie au plus le **27 Octobre 2022**.
+
+Soit une décalge temporel d'**une semaine**.
+
+![Variation Décalage Hospitalisation et Cas positif](./assets/1.4.a.2.png)
