@@ -112,3 +112,41 @@ Le nombre d'hospitalisation grandit au plus, lors de la seconde vague, le **3 No
 Soit une décalge temporel d'**une semaine**.
 
 ![Variation Décalage Hospitalisation et Cas positif](./assets/1.4.a.2.png)
+
+## Cartographier
+
+Les données non reconnues sont
+- Grand Est : **FRF1** (Alsace)
+- Guyane : **FRY3**
+- Hauts-de-France : **FRE1** (Nord-Pas-de-Calais)
+- Nouvelle-Aquitaine : **FRI1** (Aquitaine)
+- Occitanie: **FRJ1** (Languedoc-Roussillon)
+
+![Taux Occupation Symbol](./assets/1.6.a.1.png)
+![Taux Occupation Filled](./assets/1.6.a.2.png)
+
+### Entre la carte de symbole et la carte pleine, laquelle vous semble le plus appropriée ?
+
+La **carte pleine** semble plus approprié : 
+- **plus** simple de voir la couleur (*même si des informations deviennent manquantes ou éronnée suite au mauvais encodage des régions*)
+- **moins** de confusion : l'information concerne toute la région
+
+### Quelles sont les régions (donnez en trois ou quatre) qui se sont déteriorées le plus tôt lors de la 2e vague ?
+
+Lors de la première vague, la région **Île de France** et **Alsace** (Grand Est) ont été les premiers touchées.
+![Taux Occupation 1er vague](./assets/1.6.b.1.png)
+
+Cependant, lors de la **deuxième vague**, les régions du Sud (**Rhônes-Alpes**, et **Provences Alpes Côtes d'Azur**) avec le **Nord-Pas-de-Calais** (Hauts-de-France) ont été les premières touchées.
+
+![Taux Occupation 2eme vague](./assets/1.6.b.2.png)
+
+## Explorer d'autre représentation
+
+Nous cherchons à savoir si la **densité de population** impacte le **nombre d'hospitalisation**. En effet, il nous semble évident qu'il existe une relation de **corrélation positive** entre ces deux variables. Nous examinons le graphique en deux dates.
+
+![Taux Occupation 2eme vague](./assets/1.7.a.1.png)
+![Taux Occupation 2eme vague](./assets/1.7.a.2.png)
+
+Contre toute attente, nous observons très peu de corrélation entre ces deux variables. Nous arrivons néanmoins à effectuer une régression logarithmique qui passe le test de significativité à `0.001`.
+
+Cependant, ce test ne signifie pas grand chose ici, les quelques points à forte densité sont des cas isolés de grandes villes. Nous pouvons voir, que hormis ces cas, les observations sont quasiment selon une droite vertical, donc **une abscence de corrélation**.
